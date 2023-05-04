@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="{% static 'login/style.css' %}">
+
+
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Login</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Usuário" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Senha" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+   </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Novo por aqui?</h3>
+            <p>Cadastre-se no nosso site e fique por dentro das novidades!
+            </p>
+            <button class="btn transparent" id="sign-up-btn" >
+
+              
+              <a href="/cadastro/"> Cadastre-se </a>
+            </button>
+          </div>
+          <img src="{%static 'img/img2.png' %}" class="image" alt="" >
+          <!-- <img src="img/img2.png" class="image" alt="" /> -->
+        </div>
+  </body>
+</html>
